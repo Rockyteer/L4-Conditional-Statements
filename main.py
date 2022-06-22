@@ -1,3 +1,4 @@
+'''
 isHungry = input("Y/N: Are you hungry?")
 isBored = input("Y/N: Are you bored?")
 if(isHungry == "Y" or isHungry == "y"):
@@ -26,3 +27,27 @@ elif(13 <= userNumber <= 17):
   print("You are old enough to watch G-rated and PG-13 movies but not R-rated")
 else:
   print("You can only watch G-rated movies")
+'''
+#ask the user for an x and a y value
+#Based on the x and y value, output which quadrant they're in.
+
+X = int(input("Give me a x-value: "))
+Y = int(input("Give me a y-value: "))
+
+if(X > 0 and Y > 0):
+  print("You are in Quadrant I")
+elif(X < 0 and Y > 0):
+  print("You are in quadrant II")
+elif(X < 0 and Y < 0):
+  print("You are in quadrant III")
+elif(X > 0 and Y < 0):
+  print("You are in quadrant IV")
+elif(X == 0 and Y != 0):
+  print("y-axis")
+elif(X != 0 and Y == 0):
+ print("x-axis")
+else:
+  print("Origin")
+
+  
+  
